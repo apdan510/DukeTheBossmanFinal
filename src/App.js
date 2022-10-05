@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
@@ -7,6 +7,7 @@ import Services from "./components/pages/Services";
 import Products from "./components/pages/Products";
 
 function App() {
+  useEffect(() => { document.title = "Duke The Bossman" }, []);
   return (
     <>
       <Router>
